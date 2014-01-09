@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Poseidon Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Le styles -->
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<style>
+	body { padding-top: 60px;}
+	</style>
+</head>
+<body>
+									
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<a class="navbar-brand" href="/">Poseidon Example</a>
+		<ul class="nav navbar-nav pull-right">
+			<li><a href="<%= url_for :controller => "post", :action => "index" %>">Posts</a></li>
+			<li><a href="<%= url_for :controller => "user", :action => "index" %>">Users</a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<%= yield %>
+	</div> 
+
+</body>
+</html>

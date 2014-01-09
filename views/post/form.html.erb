@@ -1,0 +1,21 @@
+<h2><%= method  %> </h2>
+
+<% form_action = post.id.blank? ? (url_for :controller => "post", :action => action)  :  (url_for :controller => "post", :action => action, :id => post.id)  %>
+
+<form action="<%= form_action %>" method="post" class="form-horizontal">
+   <div class="control-group">
+    <div class="controls">
+      
+  <input value="<%= post.title %>" placeholder="title" type="text" name="post[title]"><br>
+  <input value="<%= post.body %>" placeholder="body" type="text" name="post[body]"><br>
+  <input value="<%= post.user_id %>" placeholder="user_id" type="text" name="post[user_id]"><br>
+    </div>
+  </div>
+
+
+<div class="form-actions">
+  <input class="btn" type="submit" value="Submit">
+</div>
+
+</form>
+

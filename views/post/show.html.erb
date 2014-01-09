@@ -1,0 +1,9 @@
+<h2><%= @post.title %></h2>
+
+<p class="well">
+	<%= @post.body %>
+</p>
+
+<%= link_to "Back", @post, "index", class: "btn btn-default" %>
+<%= link_to "Edit", @post, "edit", class: "btn btn-success" %>
+<%= link_to "Delete", @post, "destroy", class: "btn btn-default btn-danger" %>

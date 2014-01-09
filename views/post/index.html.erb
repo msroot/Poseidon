@@ -1,0 +1,10 @@
+<h2>All Posts</h2>
+
+<ul>
+	<% @posts.each do |post| %>
+	<li><%= link_to post.title, post %> </li>
+	<% end %>
+</ul>
+
+
+<%= link_to "Add new Post", @posts.last, "new", class: "btn btn-default" %>
