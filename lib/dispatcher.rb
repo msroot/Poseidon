@@ -6,8 +6,8 @@ module Poseidon
     attr_accessor :params
     attr_accessor :request
     
-    def initialize controller_name, method, params, request
-      @controller_name, @method, @params, @request = controller_name, method, params, request
+    def initialize controller_name, meth, params, request
+      @controller_name, @method, @params, @request = controller_name, meth, params, request
     end
     
     def dispatch!
