@@ -68,3 +68,6 @@ view/post/show.rb
 ### Create new:
 
     localhost:8080/post/new
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/msroot/poseidon/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
